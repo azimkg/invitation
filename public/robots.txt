@@ -1,3 +1,1 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+npx tailwindcss -i ./src/App.css -o ./dist/output.css --watch

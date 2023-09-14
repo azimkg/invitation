@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.backImg {
+    background-image: url(../src/assets/images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-detail {
+    background-image: url(../src/assets/images/bg-detail.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-love {
+    background-image: url(../src/assets/images/bg-love.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-mask {
+    -webkit-mask: url(https://static.rfstat.com/renderforest/images/website_maker_images/components/component-images/text14-3.4.0.svg) -2px top / auto 100% repeat-x;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-grad {
+    background: linear-gradient(rgba(252, 251, 253, 0), rgba(252, 251, 253, 0));
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.bg-grad::after {
+    background: linear-gradient(rgba(252, 251, 253, 0), rgba(252, 251, 253, 0));
+    content: "";
+    word-break: break-word
+}
+
+.btn-invite {
+    background: linear-gradient(-180deg, rgb(167, 179, 163) 0%, rgb(109, 117, 97) 96%);
+}
+
+.btn-invite:hover {
+    background: linear-gradient(-180deg, rgb(190, 202, 185) 0%, rgb(130, 139, 116) 96%);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.rot-line {
+    transform: rotate(-100deg);
+}
+
+.blockImg1 {
+    animation: moveUpDown1 3s ease infinite alternate;
+}
+
+.blockImg2 {
+    animation: moveUpDown2 3s ease infinite alternate;
+}
+
+.blockImg3 {
+    animation: moveUpDown3 3s ease infinite alternate;
+}
+
+.firstBlock {
+    width: 320px;
+    height: 350px;
+}
+
+.secondBlock {
+    width: 350px;
+    height: 400px;
+}
+
+.firstTwo {
+    width: 150px;
+    height: 150px;
+}
+
+@media (max-width:1280px) {
+    .text_second {
+        bottom: -60px
+    }
+}
+
+@media (max-width:1024px) {
+    .firstBlock {
+        width: 60%;
+        height: 350px;
+    }
+
+    .secondBlock {
+        width: 60%;
+        height: 400px;
+    }
+
+    .firstTwo {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (max-width:768px) {
+    .text_second {
+        bottom: -30px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:640px) {
+    .firstBlock {
+        width: 80%;
+        height: 300px;
+        margin-left: 70px;
+    }
+
+    .svgIcon {
+        width: 60px;
+        left: -50px
+    }
+
+    .texter {
+        font-size: 30px;
+    }
+}
+
+
+
+@media (max-width:500px) {
+    .firstBlock {
+        width: 80%;
+        height: 300px;
+    }
+
+    .secondBlock {
+        width: 80%;
+        height: 350px;
+    }
+
+    .firstTwo {
+        width: 50%;
+        height: 50%;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .text_second {
+
+        bottom: -40px;
+    }
+}
+
+@media (max-width:400px) {
+    .firstBlock {
+        width: 70%;
+        height: 250px;
+        margin-left: 80px;
+    }
+
+    .secondBlock {
+        width: 70%;
+        height: 300px;
+        margin-left: 20px;
+    }
+
+    .firstTwo {
+        width: 50%;
+        height: 50%;
+
+    }
+}
+
+
+
+@keyframes moveUpDown1 {
+    0% {
+        top: 80px;
+    }
+
+    100% {
+        top: 100px;
+    }
+}
+
+@keyframes moveUpDown2 {
+    0% {
+        top: 44px;
+    }
+
+    100% {
+        top: 64px;
+    }
+}
+
+@keyframes moveUpDown3 {
+    0% {
+        bottom: -56px;
+    }
+
+    100% {
+        bottom: -66px;
+    }
 }
