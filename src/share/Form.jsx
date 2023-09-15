@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ModalSucces from './ModalSucces';
+import ModalSuccess from './ModalSucces';
 
 const Form = ({ closeModal, section1Ref }) => {
     const [modal, setModal]= useState(false)
@@ -32,7 +32,7 @@ const Form = ({ closeModal, section1Ref }) => {
             </div>
             <button onClick={openSucces} className="btn-invite py-3 px-14 rounded-md text-white text-lg hover:bg-[#A7B3A3] mt-4">Я приду</button>
             {
-                modal ? <ModalSucces closeSucces={closeSucces} />:null
+                modal ? <ModalSuccess closeSucces={closeSucces} />:null
             }
         </div>
     );
