@@ -7,11 +7,6 @@ const Form = ({ closeModal, section1Ref }) => {
     const openSucces = () => {
         setModal(true)
     }
-
-    const closeSucces = () => {
-        setModal(false)
-        closeModal(false)
-    }
     return (
         <div ref={section1Ref} className="relative z-20 bg-[#FCFBFD] flex items-center flex-col justify-center p-10">
             <h2 className="text-xl sm:text-2xl text-[#656C64] font-bold font-pacif text-center sm:tracking-[1px] mb-2 sm:mb-0">Приглашаем вас на нашу свадьбу</h2>
@@ -32,7 +27,7 @@ const Form = ({ closeModal, section1Ref }) => {
             </div>
             <button onClick={openSucces} className="btn-invite py-3 px-14 rounded-md text-white text-lg hover:bg-[#A7B3A3] mt-4">Я приду</button>
             {
-                modal ? <ModalSuccess closeSucces={closeSucces} />:null
+                modal ? <ModalSuccess closeModal={closeModal} setModal={setModal} />:null
             }
         </div>
     );
