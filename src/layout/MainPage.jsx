@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Header from '../components/Header';
 import Details from '../components/Details';
 import Timer from '../components/Timer';
