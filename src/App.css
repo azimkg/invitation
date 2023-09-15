@@ -27,10 +27,14 @@
 }
 
 .bg-love {
-    background-image: url(../src/assets/images/bg-love.jpg);
+    background-image: url(../src/assets/images/photo8.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.levitatePhoto {
+    object-position: bottom;
 }
 
 .bg-mask {
