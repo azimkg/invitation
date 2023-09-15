@@ -3,7 +3,7 @@ import photo1 from '../assets/images/photo1.jpeg';
 import photo2 from '../assets/images/photo2.jpeg';
 import photo3 from '../assets/images/photo3.jpeg';
 import photo6 from '../assets/images/photo6.jpeg';
-import photo10 from '../assets/images/photo10.jpeg';
+import photo10 from '../assets/images/photo10.jpg';
 import photo13 from '../assets/images/photo13.jpeg';
 
 const Header = ({section3Ref, section2Ref, section4Ref, scrollToSection}) => {
