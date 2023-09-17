@@ -22,7 +22,7 @@ const FormsForInvite = ({section1Ref, scrollToSection, section4Ref}) => {
         <div ref={section4Ref} className="bg-detail py-14 relative z-20 flex items-center justify-center">
             <div className="bg-grad flex flex-col items-center gap-4 p-10 sm:p-20 rounded-2xl shadow-2xl">
                 <p className="text-[#656C64] text-2xl">
-                    Ты придешь?
+                    Вы придете?
                 </p>
                 <h2 className="text-[#656C64] text-4xl font-bold font-pacif texter">Чынгыз и Мээрим</h2>
                 <p className="text-[#656C64] text-lg">Просьба ответить до 1 октября.</p>

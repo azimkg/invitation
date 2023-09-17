@@ -88,7 +88,7 @@ const Header = ({section3Ref, section2Ref, section4Ref, scrollToSection}) => {
                     </svg>
                 </div>
                 <div className="flex flex-col items-center justify-center mt-16 w-full sm:w-auto">
-                    <p  className="font-lato text-[#6D7561] text-2xl text-center">Приглашаем на нашу свадьбу</p>
+                    <p  className="font-lato text-[#6D7561] text-2xl text-center">Приглашаем Вас на нашу свадьбу</p>
                     <h1 className="text-3xl md:text-5xl font-pacif font-bold text-[#6D7561] mt-10 text-center">Чынгыз и Мээрим</h1>
                     <div className="hover:opacity-80 flex items-center mt-10">
                         <p onClick={link1} className="font-lato text-[#6D7561] text-lg cursor-pointer">Просьба ответьте</p>
