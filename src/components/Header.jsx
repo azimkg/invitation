@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import photo1 from '../assets/images/photo1.jpeg';
 import photo2 from '../assets/images/photo2.jpeg';
 import photo3 from '../assets/images/photo3.jpeg';
-import photo6 from '../assets/images/photo6.jpeg';
 import photo10 from '../assets/images/photo10.jpg';
 import photo13 from '../assets/images/photo13.jpeg';
 import photo14 from '../assets/images/photo14.jpeg';
@@ -44,8 +42,8 @@ const Header = ({section3Ref, section2Ref, section4Ref, scrollToSection}) => {
         document.body.style.overflow = 'auto'; 
     };
     const closeModal = () => {
-    setIsBurger(false);
-    document.body.style.overflow = 'auto'; 
+        setIsBurger(false);
+        document.body.style.overflow = 'auto';
     };
     
     return (
@@ -59,9 +57,8 @@ const Header = ({section3Ref, section2Ref, section4Ref, scrollToSection}) => {
                             <path d="M7 7.00001L16.8995 16.8995" stroke="#6D746C" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <ul className="py-16 px-4 flex flex-col gap-3">
-                            <li onClick={link1} className="text-[#6D746C] text-lg">Ваш ответ</li>
                             <li onClick={link2} className="text-[#6D746C] text-lg">Узнать детали</li>
-                            <li onClick={link3} className="text-[#6D746C] text-lg">Дресс код</li>
+                            <li onClick={link1} className="text-[#6D746C] text-lg">Ваш ответ</li>
                         </ul>
                     </div>
                     :
@@ -74,9 +71,8 @@ const Header = ({section3Ref, section2Ref, section4Ref, scrollToSection}) => {
                 </svg>
             </div>
             <ul className="relative z-20 container  hidden md:flex justify-end gap-4 py-6">
-                <li><p onClick={link1} className="font-lato text-[#6D746C] text-lg hover:opacity-80 cursor-pointer">Ваш ответ</p></li>
                 <li><p onClick={link2} className="font-lato text-[#6D746C] text-lg hover:opacity-80 cursor-pointer">Узнать детали</p></li>
-                <li><p onClick={link3} className="font-lato text-[#6D746C] text-lg hover:opacity-80 cursor-pointer">Дресс код</p></li>
+                <li><p onClick={link1} className="font-lato text-[#6D746C] text-lg hover:opacity-80 cursor-pointer">Ваш ответ</p></li>
             </ul>
             <div className="relative z-20 flex items-start sm:items-center lg:items-start container flex-col lg:flex-row justify-center gap-10 py-12 md:py-28 w-full h-full">
                 <div className="relative firstBlock">
