@@ -53,8 +53,8 @@ const Header = ({section3Ref, section2Ref, section4Ref, scrollToSection}) => {
                     <div className="fixed top-0 left-0 bg-white w-full h-full z-50">
                         <svg className="w-7 h-7 absolute right-4 top-6" onClick={closeModal} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="24" height="24" fill="white"/>
-                            <path d="M7 17L16.8995 7.10051" stroke="#6D746C" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M7 7.00001L16.8995 16.8995" stroke="#6D746C" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 17L16.8995 7.10051" stroke="#6D746C" strokeLinecap="round" strokeLinejoin="round"/>
+                            <path d="M7 7.00001L16.8995 16.8995" stroke="#6D746C" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                         <ul className="py-16 px-4 flex flex-col gap-3">
                             <li onClick={link2} className="text-[#6D746C] text-lg">Узнать детали</li>
