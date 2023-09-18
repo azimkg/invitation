@@ -3,7 +3,6 @@ import Form from '../share/Form';
 
 const FormsForInvite = ({section1Ref, scrollToSection, section4Ref}) => {
     const [isForm, setIsForm] = useState(false)
-    
 
     function timeScroll() {
         setTimeout(()=>{scrollToSection(section1Ref)},0)
@@ -15,7 +14,7 @@ const FormsForInvite = ({section1Ref, scrollToSection, section4Ref}) => {
     };
     
     const closeModal = () => {
-    setIsForm(false);
+        setIsForm(false);
     };
     return (
         <>
