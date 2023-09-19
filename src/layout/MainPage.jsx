@@ -5,6 +5,7 @@ import Timer from '../components/Timer';
 import DressCode from '../components/DressCode';
 import FormsForInvite from '../components/FormsForInvite';
 import Footer from '../components/Footer';
+import Music from '../share/Music';
 
 const MainPage = () => {
     const targetDate = new Date("2023-10-11T17:00:00").getTime();
@@ -26,7 +27,8 @@ const MainPage = () => {
             <Timer targetDate={targetDate} />
             <DressCode section3Ref={section3Ref} />
             <FormsForInvite section1Ref={section1Ref} section4Ref={section4Ref} scrollToSection={scrollToSection} />
-            <Footer/>
+            <Footer />
+            <Music/>
         </div>
     );
 };
