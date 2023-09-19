@@ -6,6 +6,7 @@ const Form = ({ closeModal, section1Ref }) => {
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
     const [partner, setPartner] = useState('');
+    const [whoAreYou, setWhoAreYou] = useState('');
     const [isNameEmpty, setIsNameEmpty] = useState(false);
     const [isSurnameEmpty, setIsSurnameEmpty] = useState(false);
 
@@ -63,7 +64,7 @@ const Form = ({ closeModal, section1Ref }) => {
                     />
                 </div>
             </div>
-            <div className="w-80 md:w-[660px]">
+            <div className="w-80 md:w-[660px] mb-4">
                 <label
                     htmlFor="morePerson"
                     className="font-lato text-[#656C64]"
@@ -76,6 +77,21 @@ const Form = ({ closeModal, section1Ref }) => {
                     className="w-full border h-12 px-3 rounded-lg bg-white"
                     value={partner}
                     onChange={(e) => setPartner(e.target.value)}
+                />
+            </div>
+            <div className="w-80 md:w-[660px]">
+                <label
+                    htmlFor="whoAreYou"
+                    className="font-lato text-[#656C64]"
+                >
+                    Кем вы приходитесь моложоденам?
+                </label>
+                <input
+                    type="text"
+                    id="whoAreYou"
+                    className="w-full border h-12 px-3 rounded-lg bg-white"
+                    value={whoAreYou}
+                    onChange={(e) => setWhoAreYou(e.target.value)}
                 />
             </div>
             <button
@@ -92,6 +108,7 @@ const Form = ({ closeModal, section1Ref }) => {
                         name={name}
                         surname={surname}
                         partner={partner}
+                        whoAreYou={whoAreYou}
                     />
                     : null
             }

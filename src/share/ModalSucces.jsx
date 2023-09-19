@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ModalSuccess = ({ setModal, closeModal, name, surname, partner}) => {
+const ModalSuccess = ({ setModal, closeModal, name, surname, partner, whoAreYou}) => {
     
     const closeSuccess = () => {
         setModal(false)
@@ -12,7 +12,8 @@ const ModalSuccess = ({ setModal, closeModal, name, surname, partner}) => {
         const data = {
             name,
             surname,
-            partner
+            partner,
+            whoAreYou,
         }
 
         fetch('https://script.google.com/macros/s/AKfycbw4TStx_mIrgjzXf0bQMF2QpreU4Cp9lVZNk-e-ymvjcVHwut_tsr_b34ljVP37ltbHSw/exec', {

@@ -37,6 +37,9 @@
     object-position: bottom;
 }
 
+.owner-text {
+    margin-top: 50px;
+}
 .bg-mask {
     -webkit-mask: url(https://static.rfstat.com/renderforest/images/website_maker_images/components/component-images/text14-3.4.0.svg) -2px top / auto 100% repeat-x;
 }
